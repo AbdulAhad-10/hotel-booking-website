@@ -1,0 +1,391 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+}
+
+header {
+  background: linear-gradient(
+      0deg,
+      rgba(0, 52, 101, 0.72) 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    url("assets/bg.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+nav {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  align-items: center;
+  position: relative;
+  top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 0;
+  border: none;
+  border-radius: 15px;
+}
+
+.nav__links :not(:last-child) {
+  margin-right: 10px;
+}
+
+.nav__links a {
+  text-decoration: none;
+  color: #262626;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 0 10px;
+}
+
+.nav__logo {
+  align-items: center;
+}
+
+.nav__logo img {
+  width: 78px;
+  height: 42px;
+  cursor: pointer;
+}
+
+.header__text {
+  position: absolute;
+  left: 120px;
+  bottom: 87px;
+  color: #fff;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.book-room {
+  width: 90%;
+  height: 320px;
+  border-radius: 42px;
+  background: #e9f3f6;
+  margin: 60px auto;
+  justify-content: center;
+}
+
+.frame1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 9px;
+  position: relative;
+  top: 36px;
+}
+
+.frame1__heading {
+  color: #000;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.frame1__text {
+  color: #5e5e5e;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.date {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 85px;
+  top: 65px;
+  gap: 9px;
+}
+
+.frame__head {
+  color: #000;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.frame__rect {
+  display: flex;
+  height: 60px;
+  width: 268px;
+  border-radius: 12px;
+  background: #fff;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.icon {
+  height: 24px;
+  width: 24px;
+}
+
+.frame__text {
+  color: #1e1e1e;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.person {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 417px;
+  top: -24px;
+  gap: 9px;
+}
+
+.arrow {
+  height: 24px;
+  width: 24px;
+  position: relative;
+  left: -15px;
+}
+
+.person__frame-rect {
+  display: flex;
+  height: 60px;
+  width: 433px;
+  border-radius: 12px;
+  background: #fff;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+#book-now {
+  position: relative;
+  right: 80px;
+  bottom: 85px;
+  float: right;
+  padding: 15px 32px;
+  border: none;
+  border-radius: 12px;
+  background: #65aef2;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.facilities {
+  height: 860px;
+  background: #f3f3f3;
+}
+
+.image-section {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 20px;
+  justify-content: center;
+  padding: 50px 0;
+}
+
+.large-image {
+  width: 400px;
+  height: 760px;
+  grid-row: 1 / 3;
+  border-radius: 42px;
+  background-image: url(assets/Rooms.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.img-text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: end;
+  color: #fff;
+  font-weight: 700;
+  font-size: 32px;
+  padding-bottom: 50px;
+}
+
+.image {
+  width: 400px;
+  height: 360px;
+  border-radius: 42px;
+}
+
+.dining {
+  background-image: url(assets/Dining.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.services {
+  background-image: url(assets/services.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.conference {
+  background-image: url(assets/Conferences\ &\ Meetings.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.wedding {
+  background-image: url(assets/wedding.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.special-offers {
+  margin: 80px 60px;
+}
+
+.special-offers h1 {
+  color: #000;
+  font-size: 64px;
+  font-weight: 500;
+  padding: 0 0 20px 20px;
+}
+
+.special-offers h2 {
+  color: #65aef2;
+  font-size: 32px;
+  font-weight: 500;
+  padding: 0 0 20px 20px;
+}
+
+.special-offers h3 {
+  color: #65aef2;
+  font-size: 32px;
+  font-weight: 700;
+  float: right;
+  padding: 0 20px 20px 0;
+  position: relative;
+  bottom: 80px;
+}
+
+.special-offers p {
+  color: #1e1e1e;
+  font-size: 24px;
+  font-weight: 400;
+  padding: 0 0 20px 20px;
+  width: 62%;
+}
+
+.offers {
+  display: flex;
+  align-items: flex-start;
+}
+
+.card {
+  flex: 1;
+  height: 547px;
+  width: 400px;
+}
+
+footer {
+  background: #1e1e1e;
+  display: inline-flex;
+  flex-direction: column;
+  width: 100%;
+  height: 520px;
+}
+
+.e-mail {
+  position: relative;
+  left: 95px;
+  top: 142px;
+  width: 1440px;
+}
+
+.e-mail p {
+  color: #fff;
+  font-size: 36px;
+  font-weight: 500;
+  padding-bottom: 40px;
+}
+
+.e-mail input,
+button {
+  padding: 25px 48px;
+  align-items: center;
+  border: none;
+  font-size: 24px;
+}
+
+.e-mail input {
+  color: #d9d9d9;
+  font-style: italic;
+  width: 430px;
+  border-radius: 12px 0px 0px 12px;
+}
+
+.e-mail button {
+  color: #d9d9d9;
+  width: 170px;
+  border-radius: 0px 12px 12px 0px;
+  background: #65aef2;
+  padding: 25px;
+}
+
+.cpyrt {
+  display: inline-flex;
+  justify-content: center;
+  position: relative;
+  top: 300px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: 54px;
+  position: relative;
+  top: -110px;
+  gap: 69px;
+  height: 248px;
+  width: 502px;
+}
+
+.about img {
+  align-self: center;
+}
+
+.about-content {
+  display: flex;
+  margin-top: -40px;
+  height: 97px;
+}
+
+.about-content div {
+  display: flex;
+  width: 154px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.about-content a {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+}
